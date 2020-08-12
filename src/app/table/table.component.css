@@ -1,0 +1,10 @@
+.dateBox {
+    height: 50px;
+    width: 50px;
+    margin: 4px;
+    border: solid 1px;
+    border-radius: .5em;
+    text-align: center;
+    font-size: 12px;
+    text-size-adjust: 1px;
+}

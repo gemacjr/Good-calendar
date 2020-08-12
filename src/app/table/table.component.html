@@ -1,0 +1,145 @@
+<br><div class="container">
+
+     <table >
+
+       
+        <tr *ngFor="let row of monthOne;">
+           
+          <td  *ngFor="let column of days; let i = index;">
+            <div class="dateBox">
+                <input  type="checkbox" name="row[i].datekey" value="row[i].dateKey" (click)="getDateId($event, row[i].dateKey)" >
+                    {{row[i].dateNumber}}
+                    {{row[i].dayOfWeek}}
+            </div>
+        </td>
+    </tr>
+      </table> 
+ </div> 
+
+ <br><div class="container">
+
+    <table >
+
+      
+       <tr *ngFor="let row of monthOne;">
+          
+         <td  *ngFor="let column of days; let i = index; ">
+           <div class="dateBox">
+               <input  type="checkbox" name="row[i].datekey" value="row[i].dateKey" (click)="getDateId($event, row[i].dateKey)" >
+                   {{row[i].dateNumber}}
+                   {{row[i].dayOfWeek}}
+           </div>
+       </td>
+   </tr>
+     </table> 
+</div> 
+
+<br><div class="container">
+
+    <table >
+
+      
+       <tr *ngFor="let row of monthOne;">
+          
+         <td  *ngFor="let column of days; let i = index;">
+           <div class="dateBox">
+               <input  type="checkbox" name="row[i].datekey" value="row[i].dateKey" (click)="getDateId($event, row[i].dateKey)">
+                   {{row[i].dateNumber}}
+                   {{row[i].dayOfWeek}}
+           </div>
+       </td>
+   </tr>
+     </table> 
+</div> 
+<!-- 
+ <div class="container">
+<div class="row">
+
+    <div class="dateBox" *ngFor='let day of weekOne; index as i'>
+        
+        <input type="checkbox" name="{{day.dateKey}}" [value]="day.dateKey" (change)="getDateId($event, day.dateKey)">
+        {{day.dateNumber}}
+        {{day.dayOfWeek}}
+    
+    </div>
+</div>
+</div> -->
+<!-- 
+<div class="row">
+
+    <div class="dateBox" *ngFor='let day of weekTwo; index as i'>
+        <input type="checkbox" name="{{day.dateKey}}" [value]="day.dateKey" (change)="getDateId($event, day.dateKey)">
+        {{day.dateNumber}}
+        {{day.dayOfWeek}}
+    </div>
+</div>
+<div class="row">
+
+    <div class="dateBox" *ngFor='let day of weekThree; index as i'>
+        <input type="checkbox" name="{{day.dateKey}}" [value]="day.dateKey" (change)="getDateId($event, day.dateKey)">
+        {{day.dateNumber}}
+        {{day.dayOfWeek}}
+    </div>
+</div>
+<div class="row">
+
+    <div class="dateBox" *ngFor='let day of weekFour; index as i'>
+        <input type="checkbox" name="{{day.dateKey}}" [value]="day.dateKey" (change)="getDateId($event, day.dateKey)">
+        {{day.dateNumber}}
+        {{day.dayOfWeek}}
+    </div>
+</div>
+<div class="row">
+
+    <div class="dateBox" *ngFor='let day of weekFive; index as i'>
+        <input type="checkbox" name="{{day.dateKey}}" [value]="day.dateKey" (change)="getDateId($event, day.dateKey)">
+        {{day.dateNumber}}
+        {{day.dayOfWeek}}
+    </div>
+</div>
+</div>
+
+<div class="container">
+    <div class="row">
+    
+        <div class="dateBox" *ngFor='let day of weekOne; index as i'>
+            <div  *ngIf="day.dateNumber !== '00'">
+            <input type="checkbox" name="{{day.dateKey}}" [value]="day.dateKey" (change)="getDateId($event, day.dateKey)">
+            {{day.dateNumber}}
+            {{day.dayOfWeek}}
+        </div>
+        </div>
+    </div>
+    <div class="row">
+    
+        <div class="dateBox" *ngFor='let day of weekTwo; index as i'>
+            <input type="checkbox" name="{{day.dateKey}}" [value]="day.dateKey" (change)="getDateId($event, day.dateKey)">
+            {{day.dateNumber}}
+            {{day.dayOfWeek}}
+        </div>
+    </div>
+    <div class="row">
+    
+        <div class="dateBox" *ngFor='let day of weekThree; index as i'>
+            <input type="checkbox" name="{{day.dateKey}}" [value]="day.dateKey" (change)="getDateId($event, day.dateKey)">
+            {{day.dateNumber}}
+            {{day.dayOfWeek}}
+        </div>
+    </div>
+    <div class="row">
+    
+        <div class="dateBox" *ngFor='let day of weekFour; index as i'>
+            <input type="checkbox" name="{{day.dateKey}}" [value]="day.dateKey" (change)="getDateId($event, day.dateKey)">
+            {{day.dateNumber}}
+            {{day.dayOfWeek}}
+        </div>
+    </div>
+    <div class="row">
+    
+        <div class="dateBox" *ngFor='let day of weekFive; index as i'>
+            <input type="checkbox" name="{{day.dateKey}}" [value]="day.dateKey" (change)="getDateId($event, day.dateKey)">
+            {{day.dateNumber}}
+            {{day.dayOfWeek}}
+        </div>
+    </div>
+    </div> -->
